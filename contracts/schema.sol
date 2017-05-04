@@ -25,4 +25,13 @@ contract Schema {
         string genre;
     }
 
+    enum MemberStatus { Active, Inactive }
+    
+    struct Member {
+        string name;
+        address account;
+        MemberStatus status;
+        uint dateAdded;
+    }
+
 }
